@@ -38,7 +38,7 @@ const Naverl = () => {
             <div className='sm:ml-0  ml-9  '><h1>Mr. Nattayod</h1></div>
                 {/* Toggle manu */}
                 <div className='sm:hidden flex justify-end'>
-                    <button id='manu-toggle' className='text-primabgstal' onClick={toggleMaenu}>
+                    <button id='manu-toggle' className='text-primabgstal mr-4' onClick={toggleMaenu}>
                         <svg 
                         fill='none' 
                         stroke='currentColor' 

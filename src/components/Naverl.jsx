@@ -35,10 +35,10 @@ const Naverl = () => {
     <>
             <nav className={`fixed top-0 left-0  w-full transition-all duration-300 ease-in-out ${scrolled ? 'bg-gray-700 py-2 h-16' : 'bg-gray-900 py-2 h-16'} text-white z-50 `}    >
         <div className='    mx-auto max-w-6xl grid grid-cols-[40%,60%] h-16 items-center  '>
-            <div className='sm:ml-0  ml-9  '><h1>Mr. Roboto</h1></div>
+            <div className='sm:ml-0  ml-9  '><h1>Mr. Nattayod</h1></div>
                 {/* Toggle manu */}
                 <div className='sm:hidden flex justify-end'>
-                    <button id='manu-toggle' className='text-white' onClick={toggleMaenu}>
+                    <button id='manu-toggle' className='text-primabgstal' onClick={toggleMaenu}>
                         <svg 
                         fill='none' 
                         stroke='currentColor' 

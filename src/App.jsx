@@ -12,7 +12,7 @@ function App() {
       <Naverl/>
       <main className="mt-16">
         {/* เพิ่ม padding ด้านบนเพื่อหลีกเลี่ยงการถูกบัง */}
-        <div className="">
+        <div className="w-full justify-center items-center">
           {/* ใส่เนื้อหาของหน้าเว็บที่นี่ */}
             <Hdert/>
           <p className=" h-96">Content goes here...</p>

@@ -6,14 +6,11 @@ export default {
   ],
   theme: {
     extend: {
-      colors:{
-        primaryTitle:"#127369",
-        primaryContent:"#4C5958",
-        primarySubcontent:"#8AA6A3",
-        primaryBase:"#4C5958",
-        primaryAccent:"#10403B",
-        primaryBg:"#BFBFBF",
-      }
+      colors: {
+        'primabgbox': '#FAFAFA',
+        'primabgstal':'#FFFFFF',
+        'primatext': '#B4B4B8',
+      },
     },
   },
   plugins: [],

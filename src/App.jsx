@@ -1,34 +1,33 @@
 import { useState } from 'react'
 
 import './App.css'
-import Naverl from './components/Naverl'
-import Hdert from './components/Hdert'
+import Navbarr from './components/Navbarr'
+import Boxboyde from './components/Boxboyde'
 
 function App() {
-  
 
   return (
     <>
-      <Naverl/>
-      <main className="mt-16">
-        {/* เพิ่ม padding ด้านบนเพื่อหลีกเลี่ยงการถูกบัง */}
-        <div className="w-full justify-center items-center">
-          {/* ใส่เนื้อหาของหน้าเว็บที่นี่ */}
-            <Hdert/>
-          <p className=" h-96">Content goes here...</p>
-          <p className=" h-96">Content goes here...</p>
-          <p className=" h-96">Content goes here...</p>
-          <p className=" h-96">Content goes here...</p>
-          <p className=" h-96">Content goes here...</p>
-          <p className=" h-96">Content goes here...</p>
-          <p className=" h-96">Content goes here...</p>
-          <p className=" h-96">Content goes here...</p>
-          <p className=" h-96">Content goes here...</p>
-          <p className=" h-96">Content goes here...</p>
-          <p className=" h-96">Content goes here...</p>
-          
-        </div>
-      </main>
+    <Navbarr/>
+      <div className='mt-16'>
+        <Boxboyde/>
+        <p className='h-screen'>lk;sad';l</p>
+        <p className='h-screen'>lk;sad';l</p>
+        <p className='h-screen'>lk;sad';l</p>
+        <p className='h-screen'>lk;sad';l</p>
+        <p className='h-screen'>lk;sad';l</p>
+        <p className='h-screen'>lk;sad';l</p>
+        <p className='h-screen'>lk;sad';l</p>
+        <p className='h-screen'>lk;sad';l</p>
+        <p className='h-screen'>lk;sad';l</p>
+        <p className='h-screen'>lk;sad';l</p>
+        <p className='h-screen'>lk;sad';l</p>
+        <p className='h-screen'>lk;sad';l</p>
+        <p className='h-screen'>lk;sad';l</p>
+        <p className='h-screen'>lk;sad';l</p>
+        
+      </div>
+      
     </>
   )
 }

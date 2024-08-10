@@ -1,8 +1,28 @@
 import React, { useState, useEffect } from 'react';
 import debounce from 'lodash/debounce'; 
 
+
+
+
 function Navbarr() {
     const [scrolled, setScrolled] = useState(false);
+    // ทำการกดเเล้วสะไร
+    const navs = [
+      { title: "Hame", sectionId: "Hame-set" },
+      { title: "Skills &amp", sectionId: "Hame-set" },
+      { title: "Portfolio", sectionId: "Portfolio-set" },
+      { title: "Contact", sectionId: "Contact-set" },
+    ]
+    const handClick = (sectionId) => {
+          console.log(sectionId)
+          const element = document.getElementById(sectionId);
+          if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+          } else {
+            console.warn(`Element with id ${sectionId} not found`);
+          }
+    }
+    // ทำการกดเเล้วสะไร
 
     //maun touga/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     const [isMenu, setisMenu] = useState(false);
@@ -32,39 +52,58 @@ function Navbarr() {
             <div className='sm:ml-0  ml-9  '><h1>Mr. Nattayod</h1></div>
                 {/* Toggle manu */}
                 <div className='sm:hidden flex justify-end'>
-                    <button id='manu-toggle' className='text-primabgstal mr-4' onClick={toggleMaenu}>
-                        <svg 
-                        fill='none' 
-                        stroke='currentColor' 
-                        Stroke-linecap='round' 
-                        stroke-linejoin='round' 
-                        stroke-width='2'
-                        viewBox='0 0 24 24'
-                        className='w-6 h6'
-                        
-                        >
-                            <path d="m4 6h16M4 12h16M4 18h16"></path>
-                        </svg>
-                    </button>
+                <button id='manu-toggle' className='text-primabgstal mr-4' onClick={toggleMaenu}>
+    <svg 
+        fill='none' 
+        stroke='currentColor' 
+        strokeLinecap='round' 
+        strokeLinejoin='round' 
+        strokeWidth='2'
+        viewBox='0 0 24 24'
+        className='w-6 h6'
+    >
+        <path d="m4 6h16M4 12h16M4 18h16"></path>
+    </svg>
+</button>
                 </div>
 
             <div className='w-full flex justify-center '>
-            
+            {/* navs.map((e,i) => ) ทำการกดเเล้วสะไร */}
                 <ul className='sm:flex text-center gap-2 hidden '>
-                    <li className='w-24 '><a href="#">Hame</a></li>
+                  {
+                    navs.map((e,i) => (
+                      <li 
+                      key={`nav-${e}-${i}`} 
+                      onClick={()=>(handClick(e.sectionId))}
+                      className='w-24 '
+                      ><a href="#">{e.title}</a></li>
+                    ))
+                  }
+                    {/* <li className='w-24 '><a href="#">Hame</a></li>
                     <li className=' '><a href="#">Skills &amp; Experience</a></li>
                     <li className='w-24 '><a href="#">Portfolio</a></li>
-                    <li className='w-24 '><a href="#">Contact</a></li>
+                    <li className='w-24 '><a href="#">Contact</a></li> */}
                 </ul>
             </div>
             {/* mobile menu */}
         {isMenu ? (
             <div className='fixed top-16 left-0 w-full justify-center '>
         <ul className='flex-col h-full justify-end bg-gray-900  sm:hidden '>
-                    <li className='py-2'><a href="#">Hame</a></li>
+                    <li className='py-2'><a href="#">
+                    {
+                    navs.map((e,i) => (
+                      <li 
+                      key={`nav-${e}-${i}`} 
+                      onClick={()=>(handClick(e.sectionId))}
+                      className='w-24 '
+                      ><a href="#">{e.title}</a></li>
+                    ))
+                  }
+                    </a></li>
+                    {/* <li className='py-2'><a href="#">Hame</a></li>
                     <li className='py-2'><a href="#">Skills &amp; Experience</a></li>
-                    <li className='py-2'><a href="#">Portfolio</a></li>
-                    <li className='py-2'><a href="#">Contact</a></li>
+                    <li className='py-2'><a href="">Portfolio</a></li>
+                    <li className='py-2'><a href="#">Contact</a></li> */}
         </ul>
         </div>
         ) : null}

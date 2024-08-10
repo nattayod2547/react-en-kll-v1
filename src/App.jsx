@@ -15,15 +15,7 @@ function App() {
         <Aboutpag/>
         
         
-        <p className='h-screen'>lk;sad';l</p>
-        <p className='h-screen'>lk;sad';l</p>
-        <p className='h-screen'>lk;sad';l</p>
-        <p className='h-screen'>lk;sad';l</p>
-        <p className='h-screen'>lk;sad';l</p>
-        <p className='h-screen'>lk;sad';l</p>
-        <p className='h-screen'>lk;sad';l</p>
-        <p className='h-screen'>lk;sad';l</p>
-        <p className='h-screen'>lk;sad';l</p>
+        
         <p className='h-screen'>lk;sad';l</p>
         <p className='h-screen'>lk;sad';l</p>
         <p className='h-screen'>lk;sad';l</p>

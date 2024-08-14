@@ -20,7 +20,7 @@ function Contact() {
     e.preventDefault();
 
     const message = `Name: ${formData.name}\nEmail: ${formData.email}\nMessage: ${formData.message}`;
-    const token = '2Ce4hYv3KLHsKs5rDEQRWSYkyFFcs8zx5ompHH6Vc1T'; // ใส่ LINE Notify Token ของคุณที่นี่
+    const token = '2Ce4hYv3KLHsKs5rDEQRWSYkyFFcs8zx5ompHH6Vc1T'; // ใส่ LINE Notify Token ของคุณที่นี่ 2Ce4hYv3KLHsKs5rDEQRWSYkyFFcs8zx5ompHH6Vc1T
 
     try {
       const response = await axios.post(
@@ -43,7 +43,7 @@ function Contact() {
   };
 
   return (
-    <div className="max-w-md mx-auto p-6 bg-white rounded-lg shadow-md">
+    <div className="max-w-md mx-auto p-6 bg-white rounded-lg shadow-md" id='Contact-set'>
       <h2 className="text-2xl font-bold mb-6 text-center">Contact Us</h2>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>

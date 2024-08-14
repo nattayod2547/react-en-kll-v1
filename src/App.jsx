@@ -4,6 +4,7 @@ import './App.css'
 import Navbarr from './components/Navbarr'
 import Boxboyde from './components/Boxboyde'
 import Aboutpag from './components/Aboutpag'
+import Contact from './components/Contact'
 
 function App() {
 
@@ -13,13 +14,7 @@ function App() {
       <div className='mt-16'>
         <Boxboyde/>
         <Aboutpag/>
-        
-        
-        
-        <p className='h-screen'>lk;sad';l</p>
-        <p className='h-screen'>lk;sad';l</p>
-        <p className='h-screen'>lk;sad';l</p>
-        <p className='h-screen'>lk;sad';l</p>
+        <Contact/>
         
       </div>
       

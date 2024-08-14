@@ -53,15 +53,15 @@ function Navbarr() {
                 {/* Toggle manu */}
                 <div className='sm:hidden flex justify-end'>
                 <button id='manu-toggle' className='text-primabgstal mr-4' onClick={toggleMaenu}>
-    <svg 
-        fill='none' 
-        stroke='currentColor' 
-        strokeLinecap='round' 
-        strokeLinejoin='round' 
-        strokeWidth='2'
-        viewBox='0 0 24 24'
-        className='w-6 h6'
-    >
+                    <svg 
+                          fill='none' 
+                          stroke='currentColor' 
+                          strokeLinecap='round' 
+                          strokeLinejoin='round' 
+                          strokeWidth='2'
+                          viewBox='0 0 24 24'
+                          className='w-6 h6'
+                          >
         <path d="m4 6h16M4 12h16M4 18h16"></path>
     </svg>
 </button>

@@ -9,6 +9,8 @@ const Boxboyde = () => {
             <h1 className='text-[60px] font-bold  bg-custom-gradient text-transparent bg-clip-text '>Mr.Nattayod</h1>
             </div>
             <h4 className='mt-2 font-semibold text-slate-600'>language learned</h4>
+            
+            
             <p className='mt-5 text-slate-800'>react vite node<br/> Tailwindcss css  html </p>
             </div>
         </div>

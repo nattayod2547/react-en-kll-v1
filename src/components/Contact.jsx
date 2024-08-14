@@ -20,11 +20,11 @@ function Contact() {
     e.preventDefault();
 
     const message = `Name: ${formData.name}\nEmail: ${formData.email}\nMessage: ${formData.message}`;
-    const token = '2Ce4hYv3KLHsKs5rDEQRWSYkyFFcs8zx5ompHH6Vc1T'; // ใส่ LINE Notify Token ของคุณที่นี่ 2Ce4hYv3KLHsKs5rDEQRWSYkyFFcs8zx5ompHH6Vc1T
+    const token = ''; // ใส่ LINE Notify Token ของคุณที่นี่ 
 
     try {
       const response = await axios.post(
-        'https://cors-anywhere.herokuapp.com/https://notify-api.line.me/api/notify',
+        '',
         new URLSearchParams({ message }),
         {
           headers: {

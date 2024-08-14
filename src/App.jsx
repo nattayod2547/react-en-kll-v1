@@ -11,6 +11,9 @@ function App() {
   return (
     <>
     <Navbarr/>
+    
+
+
       <div className='mt-16'>
         <Boxboyde/>
         <Aboutpag/>
